@@ -1,30 +1,24 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import { Context } from '../../context/Context'
 import './history.css'
-import Delete from '../../assets/icon-cross.svg'
+import HistoryItem from './HistoryItem'
 
 const History = () => {
+
+  const {allTransactions} = useContext(Context)
+
+  const transactionEle = allTransactions.map(transaction => (
+    <HistoryItem 
+        key={transaction.id} 
+        transaction={transaction} 
+        name={transaction.text}
+        amount={transaction.amount}
+    />
+    ))
   return (
     <div className='history'>
       <h2 className='history-title'>History</h2>
-
-      <div className='transaction'>
-        <p className='transaction-text'>Salary of month Feb</p>
-        <div className='transaction-delete'>
-          <p className='transaction-amount'>$1000</p>
-          <button className='delete-btn'>
-            <img src={Delete} alt='delete icon' className='delete-image'/>
-          </button>
-        </div>
-      </div>
-      <div className='transaction'>
-        <p className='transaction-text'>Salary of month Feb</p>
-        <div className='transaction-delete'>
-          <p className='transaction-amount'>$1000</p>
-          <button className='delete-btn'>
-            <img src={Delete} alt='delete icon' className='delete-image'/>
-          </button>
-        </div>
-      </div>
+      {transactionEle}
     </div>
   )
 }
