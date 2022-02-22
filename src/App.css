@@ -10,3 +10,7 @@ body {
     background: var(--body-bg);
     color: #fff;
 }
+
+.container {
+  padding-inline: 1rem;
+}
