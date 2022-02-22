@@ -1,0 +1,40 @@
+.transaction-title {
+    font-size: 1.5rem;
+}
+
+form {
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: .5rem;
+}
+
+input {
+    padding: .5rem;
+}
+
+.add-transaction-btn {
+    font-family: 'Montserrat', sans-serif;
+    width: 50%;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #8fff00;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
