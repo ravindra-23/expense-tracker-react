@@ -14,3 +14,17 @@ body {
 .container {
   padding-inline: 1rem;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 40%;
+    margin: 0 auto;
+  }
+}

@@ -1,5 +1,6 @@
 .transaction-title {
     font-size: 1.5rem;
+    color: #F0FFC2;
 }
 
 form {
@@ -11,10 +12,7 @@ form {
 .form-input {
     display: flex;
     flex-direction: column;
-}
-
-.form-input {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 label {

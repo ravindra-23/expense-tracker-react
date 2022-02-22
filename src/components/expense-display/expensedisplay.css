@@ -2,6 +2,10 @@
     margin-bottom: 1.5rem;
 }
 
+.balance {
+    color: #F0FFC2;
+}
+
 .total-balance {
     margin-bottom: 2rem;
 }
@@ -41,4 +45,18 @@
 
 .expense-amount {
     color: var(--expense-text-clr);
+}
+
+@media (min-width: 768px) {
+
+    .income-expense {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .income, .expense {
+        display: unset;
+        margin: 0;
+    }
 }
