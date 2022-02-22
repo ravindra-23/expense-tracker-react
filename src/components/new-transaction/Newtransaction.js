@@ -1,13 +1,17 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import './newtransaction.css'
+import { Context } from '../../context/Context'
 
 const Newtransaction = () => {
 
+  const {addTransaction} = useContext(Context)
   const [text, setText] = useState('')
   const [amount, setAmount] = useState()
 
   const submitForm = (e) => {
     e.preventDefault()
+    const transaction = {id: Date.now().toString(), text, amount}
+    addTransaction(transaction)
     setText('')
     setAmount('')
 }
