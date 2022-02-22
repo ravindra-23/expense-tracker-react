@@ -1,0 +1,44 @@
+.expense-display {
+    padding-inline: 1rem;
+}
+
+.total-balance {
+    margin-bottom: 2rem;
+}
+
+.balance-amount {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.income-expense {
+    background: var(--card-bg);
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+}
+
+.income, .expense {
+    display: flex;
+    justify-content: space-between;
+}
+
+.income {
+    margin-bottom: 1.5rem;
+}
+
+.balance, .title, .amount {
+    font-size: 1.5rem;
+}
+
+.title {
+    padding-bottom: .2rem;
+}
+
+.income-amount {
+    color: var(--income-text-clr);
+}
+
+.expense-amount {
+    color: var(--expense-text-clr);
+}
