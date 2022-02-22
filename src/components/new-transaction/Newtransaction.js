@@ -6,7 +6,7 @@ const Newtransaction = () => {
 
   const {addTransaction} = useContext(Context)
   const [text, setText] = useState('')
-  const [amount, setAmount] = useState()
+  const [amount, setAmount] = useState(0)
 
   const submitForm = (e) => {
     e.preventDefault()
