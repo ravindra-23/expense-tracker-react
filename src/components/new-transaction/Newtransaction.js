@@ -11,7 +11,11 @@ const Newtransaction = () => {
   const submitForm = (e) => {
     e.preventDefault()
     const transaction = {id: Date.now().toString(), text, amount}
-    addTransaction(transaction)
+    if(text && amount) {
+      addTransaction(transaction)
+    } else {
+      alert('Add Title and Amount')
+    }
     setText('')
     setAmount('')
 }
