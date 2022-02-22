@@ -1,8 +1,14 @@
 import React from 'react'
 
+import { Expensedisplay, History, Newtransaction } from './components'
+
 const App = () => {
   return (
-    <div>React App Working</div>
+    <div className='container'>
+        <Expensedisplay />
+        <History />
+        <Newtransaction />
+    </div>
   )
 }
 
