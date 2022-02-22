@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Expensedisplay, History, Newtransaction } from './components'
+import './App.css'
 
 const App = () => {
   return (
