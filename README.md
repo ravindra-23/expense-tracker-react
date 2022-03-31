@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## See it Live here 
 
-Open [https://peaceful-feynman-d38ade.netlify.app/](https://peaceful-feynman-d38ade.netlify.app/)
+Open [https://expense-tracker-reactjs2308.netlify.app](https://expense-tracker-reactjs2308.netlify.app)
 
 ## Available Scripts
 
